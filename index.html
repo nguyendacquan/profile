@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Xuân Hòa - Developer Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(
+                45deg,
+                #1a0b2e,
+                #271344,
+                #451952,
+                #662549,
+                #9b4444,
+                #b85c38
+            );
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .profile-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            padding: 4px;
+            object-fit: cover;
+            object-position: center;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                padding: 1rem;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="./image/ndq.png" alt="Profile Picture" class="profile-pic">
+            <h1 class="name">NGUYỄN ĐẮC QUÂN</h1>
+            <div class="title">Full Stack Developer</div>
+            <div class="social-links">
+                <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/your-username" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                QUÂN SIÊU CẤP VÍP PRO
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">RESTful APIs</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Experience Highlights</h2>
+            <ul style="list-style-position: inside;">
+                <li>Developed and maintained full-stack web applications</li>
+                <li>Implemented responsive and user-friendly interfaces</li>
+                <li>Optimized application performance and database queries</li>
+                <li>Collaborated with cross-functional teams in agile environments</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
